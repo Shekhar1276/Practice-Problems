@@ -11,15 +11,14 @@ public class multiply {
             this.third_num=third_num;
             this.fourth_num=fourth_num;
         }
-        int mult()
+        double mult()
         {
-            int result =  first_num*second_num*third_num*fourth_num;
-            return  result;
+            return first_num*second_num*third_num*fourth_num;
         }
-        /*int geo_mean()
+        double geo_mean()
         {
-            int mean ;
-        }*/
+            return Math.pow(mult(),0.25) ;
+        }
         public static void main(String args[])
         {
             Scanner scan = new Scanner(System.in);
@@ -30,6 +29,7 @@ public class multiply {
             z = scan.nextInt();
             w = scan.nextInt();
             multiply use = new multiply(x,y,z,w);
-            System.out.println(use.mult());
+            System.out.println("Multiplication is :" +use.mult());
+            System.out.println("Geometric Mean: "+use.geo_mean());
         }
     }

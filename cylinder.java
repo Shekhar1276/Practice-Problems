@@ -9,7 +9,7 @@ public class cylinder {
     }
     double volume()
     {
-        return 3.14*radius*height;
+        return 3.14*radius*radius*height;
     }
     public static void main(String args[])
     {
